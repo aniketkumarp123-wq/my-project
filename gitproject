@@ -1,0 +1,138 @@
+BTICE17@DESKTOP-43EP946 MINGW64 ~ (master)
+$ mkdir exp1
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~ (master)
+$ cd exp1
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (master)
+$ git init
+Initialized empty Git repository in C:/Users/BTICE17/exp1/.git/
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (master)
+$ touch demo1
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (master)
+$ git add demo1
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (master)
+$ git commit -m "demo1 is added"
+[master (root-commit) 5f2fadc] demo1 is added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 demo1
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (master)
+$ git branch feature-branch
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (master)
+$ git switch feature-branch
+Switched to branch 'feature-branch'
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (feature-branch)
+$ git add demo2
+fatal: pathspec 'demo2' did not match any files
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (feature-branch)
+$ touch demo2
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (feature-branch)
+$ git add demo2
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (feature-branch)
+$ git commit -m "demo 2 is added"
+[feature-branch a024909] demo 2 is added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 demo2
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (feature-branch)
+$ git switch master
+Switched to branch 'master'
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (master)
+$ git merge feature-branch
+Updating 5f2fadc..a024909
+Fast-forward
+ demo2 | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 demo2
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (master)
+$ ls
+demo1  demo2
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp1 (master)
+$ cd ..
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~ (master)
+$ cd ..
+
+BTICE17@DESKTOP-43EP946 MINGW64 /c/Users
+$ mkdir exp2
+mkdir: cannot create directory ‘exp2’: Permission denied
+
+BTICE17@DESKTOP-43EP946 MINGW64 /c/Users
+$ cd master
+bash: cd: master: No such file or directory
+
+BTICE17@DESKTOP-43EP946 MINGW64 /c/Users
+$ cd ~
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~ (master)
+$ mkdir exp3
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~ (master)
+$ cd exp3
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp3 (master)
+$ git init
+Initialized empty Git repository in C:/Users/BTICE17/exp3/.git/
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp3 (master)
+$ touch demo3
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp3 (master)
+$ git stash
+You do not have the initial commit yet
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp3 (master)
+$ git stash -u
+You do not have the initial commit yet
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp3 (master)
+$ git stash list
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp3 (master)
+$ git stash apply
+No stash entries found.
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp3 (master)
+$ git stash pop
+No stash entries found.
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp3 (master)
+$ git stash drop
+No stash entries found.
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp3 (master)
+$ git stsh clear
+git: 'stsh' is not a git command. See 'git --help'.
+
+The most similar command is
+        stash
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~/exp3 (master)
+$ cd ..
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~ (master)
+$ cd ..
+
+BTICE17@DESKTOP-43EP946 MINGW64 /c/Users
+$ cd ~
+
+BTICE17@DESKTOP-43EP946 MINGW64 ~ (master)
+$ mkdir exp4
